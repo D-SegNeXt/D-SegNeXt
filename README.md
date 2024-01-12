@@ -23,14 +23,13 @@ will update in future
 ## DataSet
 A high-quality open-pit mine road dataset The dataset can be found in [Baidu Cloud](https://pan.baidu.com/s/1YN9lky921LUYWy2be1gsOg).
 
-### ADE20K
+### OPM
 
-|   Method  |    Backbone     |  Pretrained | Iters | mIoU(ss/ms) | Params | FLOPs  | Config | Download  |
+|   Method  |    Backbone     |  Pretrained | Iters | mIoU | Params | FLOPs  | Config | Download  |
 | :-------: | :-------------: | :-----: | :---: | :--: | :----: | :----: | :----: | :-------: |
-|  SegNeXt  |     MSCAN-T  | IN-1K | 160K | 41.1/42.2 | 4M | 7G | [config](local_configs/segnext/tiny/segnext.tiny.512x512.ade.160k.py)  | [TsingHua Cloud](https://cloud.tsinghua.edu.cn/f/5da98841b8384ba0988a/?dl=1) |
-|  SegNeXt  |     MSCAN-S | IN-1K  | 160K |  44.3/45.8  | 14M | 16G | [config](local_configs/segnext/small/segnext.small.512x512.ade.160k.py)  | [TsingHua Cloud](https://cloud.tsinghua.edu.cn/f/b2d1eb94f5944d60b3d2/?dl=1) |
-|  SegNeXt  |     MSCAN-B  | IN-1K  | 160K |  48.5/49.9 | 28M | 35G | [config](local_configs/segnext/base/segnext.base.512x512.ade.160k.py)  | [TsingHua Cloud](https://cloud.tsinghua.edu.cn/f/1ea8000916284493810b/?dl=1) |
-|  SegNeXt  |     MSCAN-L  | IN-1K  | 160K |  51.0/52.1 | 49M | 70G | [config](local_configs/segnext/large/segnext.large.512x512.ade.160k.py)  | [TsingHua Cloud](https://cloud.tsinghua.edu.cn/f/d4f8e1020643414fbf7f/?dl=1) |
+|  D-SegNeXt  |     MSCAN-T  | IN-1K | 20K | 41.1 | 5.3M | 6.8G | [config](myconfigs/dsegNeXt/tiny/dsegnext.tiny.1024x1024.OPM.20k.py)  | [Baidu Cloud](https://pan.baidu.com/s/1X7Y1RNbtvr6uUsXSZ_r7iA?pwd=6gnh) |
+|  D-SegNeXt  |     MSCAN-S | IN-1K  | 20K |  44.3  | 17.3M | 17.76G | [config](myconfigs/dsegNeXt/small/dsegnext.small.1024x1024.OPM.20k.py)  | [Baidu Cloud](https://pan.baidu.com/s/1n4NK-0joBiUxV0vZT9qjFg?pwd=a39k) |
+|  D-SegNeXt  |     MSCAN-B  | IN-1K  | 40K |  48.5 | 34.2M | 37.56G | [config](myconfigs/dsegNeXt/base/dsegnext.base.1024x1024.OPM.40k.py)  | [Baidu Cloud](https://pan.baidu.com/s/1WqMkca_h7UvqO_lG8hZI8Q?pwd=wgkx) |
 
 
 **Notes**: In this scheme, The number of FLOPs (G) is calculated on the input size of 512 $\times$ 512.

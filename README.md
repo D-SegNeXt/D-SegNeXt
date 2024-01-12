@@ -52,8 +52,7 @@ bash ./tools/dist_train.sh './myconfigs/dsegNeXt/tiny/dsegnext.tiny.1024x1024.OP
 To evaluate the model, run:
 
 ```bash
-bash ./tools/dist_test.sh '../logs/20230913_140414/segnext.tiny.512x512.OPM.20k.py' '../logs/20230913_140414/latest.pth' 2 --show-dir='../logs/20230913_140414/result/'
-./tools/dist_test.sh /path/to/config /path/to/checkpoint_file 8 --eval mIoU
+bash ./tools/dist_test.sh '../logs/20230913_140414/dsegnext.tiny.1024x1024.OPM.20k.py' '../logs/20230913_140414/latest.pth' 2 --show-dir='../logs/20230913_140414/result/'
 ```
 
 ## FLOPs

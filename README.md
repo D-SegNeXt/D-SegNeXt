@@ -26,7 +26,7 @@ A high-quality open-pit mine road dataset The dataset can be found in [Baidu Clo
 ### OPM
 
 |   Method  | Pretrained | Iters | mIoU | Params | FLOPs  | Config | Download  |
-| :-------: | :---: | :--: | :----: | :----: | :----: | :-------: |
+| :-------: | :--------: | :--: | :----: | :----: | :----: | :-------: |
 |  LinkNet  | -- | 20K | 71.45 | 21.64M | 27.38G |  |  |
 | D-LinkNet | -- | 20K | 71.75 | 31.09M | 23.59G |  |  |
 |    UNet   | -- | 20K | 59.29 | 39.50M | 8.74G |  |  |

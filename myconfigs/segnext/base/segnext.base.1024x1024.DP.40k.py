@@ -1,6 +1,6 @@
 _base_ = [
-    '../../_base_/models/dcan.py',
-    '../../_base_/datasets/OpenPitMineVoc1024x1024.py',
+    '../../_base_/models/mscan.py',
+    '../../_base_/datasets/DeepGlobeVoc1024x1024.py',
     '../../_base_/default_runtime.py',
     '../../_base_/schedules/schedule_40k_adamw.py'
 ]
@@ -13,8 +13,7 @@ model = dict(
     backbone=dict(
         embed_dims=[64, 128, 320, 512],
         depths=[3, 3, 12, 3],
-        #init_cfg=None,
-        init_cfg=dict(type='Pretrained', checkpoint='../data/pretrained_models/dsegNeXt/AttentionModuleK5D1259Cat_base.pth'),
+        init_cfg=dict(type='Pretrained', checkpoint='../data/pretrained_models/segNeXt/mscan_b.pth'),
         drop_path_rate=0.1),
     decode_head=dict(
         type='LightHamHead',
@@ -38,7 +37,7 @@ data = dict(samples_per_gpu=2)
 # evaluation = dict(interval=8000, metric='mIoU')
 # checkpoint_config = dict(by_epoch=False, interval=8000)
 # optimizer
-optimizer = dict(_delete_=True, type='AdamW', lr=0.00006, betas=(0.9, 0.999), weight_decay=0.01,
+optimizer = dict(_delete_=True, type='AdamW', lr=6e-4, betas=(0.9, 0.999), weight_decay=0.01,
                  paramwise_cfg=dict(custom_keys={'pos_block': dict(decay_mult=0.),
                                                  'norm': dict(decay_mult=0.),
                                                  'head': dict(lr_mult=10.)
@@ -47,5 +46,5 @@ optimizer = dict(_delete_=True, type='AdamW', lr=0.00006, betas=(0.9, 0.999), we
 lr_config = dict(_delete_=True, policy='poly',
                  warmup='linear',
                  warmup_iters=1500,
-                 warmup_ratio=1e-6,
+                 warmup_ratio=1e-4,
                  power=1.0, min_lr=0.0, by_epoch=False)

@@ -15,7 +15,7 @@ from PIL import Image
 if __name__ == '__main__':
     _parser = argparse.ArgumentParser(description='jpg to png')
 
-    _parser.add_argument('--path', default='../data/CMMPNETVOC512_512_3/JPEGImages', help='image path')
+    _parser.add_argument('--path', default='../data/deepglobe_1024_3/origin/train', help='image path')
 
     _args = _parser.parse_args()
 

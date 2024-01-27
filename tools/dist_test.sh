@@ -19,5 +19,6 @@ python -m torch.distributed.launch \
     --launcher pytorch \
     ${@:4}
 
-#python ./tools/test.py '../logs/20230913_140414/segnext.tiny.1024x1024.OPM.20k.py' '../logs/20230913_140414/latest.pth' --show-dir='../logs/20230913_140414/result/'
-#bash ./tools/dist_test.sh '../logs/20230913_140414/segnext.tiny.512x512.OPM.20k.py' '../logs/20230913_140414/latest.pth' 2 --show-dir='../logs/20230913_140414/result/'
+#python ./tools/test.py '../logs/20240122_072701/segnext.tiny.1024x1024.DP.20k.py' '../logs/20240122_072701/latest.pth' --show-dir='../logs/20240122_072701/result/'
+#python ./tools/test.py '../logs/20230913_140414/segnext.base.1024x1024.OPM.40k.py' '../logs/20230913_140414/latest.pth' --show-dir='../logs/20230913_140414/result/'
+#bash ./tools/dist_test.sh '../logs/20230913_140414/dsegnext.tiny.1024x1024.OPM.20k.py' '../logs/20230913_140414/latest.pth' 2 --show-dir='../logs/20230913_140414/result/'

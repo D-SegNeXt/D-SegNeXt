@@ -11,8 +11,8 @@ find_unused_parameters = True
 model = dict(
     type='EncoderDecoder',
     backbone=dict(
-        init_cfg=None),
-        #init_cfg=dict(type='Pretrained', checkpoint='../data/pretrained_models/dsegNeXt/AttentionModuleK5D1259Cat_tiny.pth')),
+        #init_cfg=None),
+        init_cfg=dict(type='Pretrained', checkpoint='../data/pretrained_models/dsegNeXt/AttentionModuleK5D1259Cat_tiny.pth')),
     decode_head=dict(
         type='LightHamHead',
         in_channels=[64, 160, 256],

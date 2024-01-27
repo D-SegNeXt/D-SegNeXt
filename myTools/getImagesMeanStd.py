@@ -16,7 +16,7 @@ from PIL import Image
 if __name__ == '__main__':
     _parser = argparse.ArgumentParser(description='get the mean and std of the images')
 
-    _parser.add_argument('--path', default='../data/DBStepLines/JPEGImages', help='image path')
+    _parser.add_argument('--path', default='../data/deepglobe_1024_3/JPEGImages', help='image path')
     _parser.add_argument('--munChannel', default=3, type=int, help='the channel of the image')
 
     _args = _parser.parse_args()

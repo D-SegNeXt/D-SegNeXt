@@ -3,6 +3,7 @@ import argparse
 import os.path as osp
 import time
 
+import beforeimport
 import mmcv
 import numpy as np
 import torch
@@ -13,6 +14,7 @@ from mmcv.runner import load_checkpoint, wrap_fp16_model
 from mmseg.datasets import build_dataloader, build_dataset
 from mmseg.models import build_segmentor
 
+#CUDA_VISIBLE_DEVICES=1 python tools/benchmark.py './myconfigs/dsegNeXt/base/dsegnext.base.1024x1024.OPM.40k.py' D:/result
 
 def parse_args():
     parser = argparse.ArgumentParser(description='MMSeg benchmark a model')

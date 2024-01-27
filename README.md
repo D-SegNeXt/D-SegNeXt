@@ -26,23 +26,23 @@ A high-quality open-pit mine road dataset The dataset can be found in [Baidu Clo
 ### OPM
 
 |   Method  | Pretrained | Iters | mIoU | Params | FLOPs  | Config | Download  |
-| :-------: | :--------: | :--: | :----: | :----: | :----: | :-------: |
+| :-------: | :--------: | :---: | :--: | :----: | :----: | :----: | :--------: |
 |  LinkNet  | -- | 20K | 71.45 | 21.64M | 27.38G |  |  |
 | D-LinkNet | -- | 20K | 71.75 | 31.09M | 23.59G |  |  |
 |    UNet   | -- | 20K | 59.29 | 39.50M | 8.74G |  |  |
 |   DUnet   | -- | 20K | 72.53 | 19.20M | 282.46G |  |  |
 | NL-LinkNet | -- | 20K | 71.69 | 21.82M | 31.44G |  |  |
-| :-------: | :-----: | :---: | :--: | :----: | :----: | :----: | :-------: |
+| --------- | ------- | ------ | ---- | ------ | ------ | ------ | --------- |
 |Segformer-b0| IN-1K | 20K | 72.24 | 3.72M | 6.36G |[config](myconfigs/segformer/segformer.b0.1024x1024.OPM.20k.py)|  |
 | SegNeXt-T| IN-1K | 20K | 71.52 | 4.23M | 6.04G |[config](myconfigs/segnext/tiny/segnext.tiny.1024x1024.OPM.20k.py)|  |
 |D-SegNeXt-T| None | 20K | 61.14 | 5.30M | 6.82G |[config](myconfigs/dsegnext/tiny/Dsegnext.tiny.1024x1024.OPM.20k.py)  | [Baidu Cloud](https://pan.baidu.com/s/1X7Y1RNbtvr6uUsXSZ_r7iA?pwd=6gnh) |
 |D-SegNeXt-T|  IN-1K | 20K | 73.32 | 5.30M | 6.82G |[config](myconfigs/dsegnext/tiny/Dsegnext.tiny.1024x1024.OPM.20k.py)  | [Baidu Cloud](https://pan.baidu.com/s/1X7Y1RNbtvr6uUsXSZ_r7iA?pwd=6gnh) |
-| :-------: | :-----: | :---: | :--: | :----: | :----: | :----: | :-------: |
+| --------- | ------- | ------ | ---- | ------ | ------ | ------ | --------- |
 |Segformer-b1| IN-1K | 20K | 74.02 | 13.68M | 11.63G |[config](myconfigs/segformer/segformer.b1.1024x1024.OPM.20k.py)|  |
 |SegNeXt-S| IN-1K | 20K | 74.24 | 13.89M | 15.32G |[config](myconfigs/segnext/small/segnext.small.1024x1024.OPM.20k.py)|  |
 |D-SegNeXt-S| None | 20K | 68.36 | 17.32M | 17.76G | [config](myconfigs/dsegnext/small/dsegnext.small.1024x1024.OPM.20k.py)  | [Baidu Cloud](https://pan.baidu.com/s/1n4NK-0joBiUxV0vZT9qjFg?pwd=a39k) |
 |D-SegNeXt-S| IN-1K | 20K | 74.61 | 17.32M | 17.76G | [config](myconfigs/dsegnext/small/dsegnext.small.1024x1024.OPM.20k.py)  | [Baidu Cloud](https://pan.baidu.com/s/1n4NK-0joBiUxV0vZT9qjFg?pwd=a39k) |
-| :-------: | :-----: | :---: | :--: | :----: | :----: | :----: | :-------: |
+| --------- | ------- | ------ | ---- | ------ | ------ | ------ | --------- |
 |Segformer-b2| IN-1K | 20K | 75.42 | 24.72M | 17.93G |[config](myconfigs/segformer/segformer.b2.1024x1024.OPM.40k.py)|  |
 | SegNeXt-B | IN-1K | 20K | 75.41 | 27.56M | 32.02G |[config](myconfigs/segnext/base/segnext.base.1024x1024.OPM.40k.py)|  |
 |D-SegNeXt-B| IN-1K | 20K | 72.12 | 34.27M | 37.56G | [config](myconfigs/dsegnext/tiny/Dsegnext.tiny.1024x1024.OPM.20k.py)  | [Baidu Cloud](https://pan.baidu.com/s/1X7Y1RNbtvr6uUsXSZ_r7iA?pwd=6gnh) |
@@ -57,17 +57,17 @@ A high-quality open-pit mine road dataset The dataset can be found in [Baidu Clo
 |    UNet   | -- | 20K | 54.37 | 39.50M | 8.74G |  |
 |   DUnet   | -- | 20K | 65.23 | 19.20M | 282.46G |  |
 | NL-LinkNet | --| 20K | 64.63 | 21.82M | 31.44G |  |
-| :-------: | :--------: | :---: | :--: | :----: | :----: | :----: |
+| --------- | ---------- | ----- | ---- | ------ | ------ | ------ |
 |Segformer-b0| IN-1K | 20K | 72.24 | 3.72M | 6.36G |[config](myconfigs/segformer/segformer.b0.1024x1024.DP.20k.py)|
 | SegNeXt-T| IN-1K | 20K | 71.52 | 4.23M | 6.04G |[config](myconfigs/segnext/tiny/segnext.tiny.1024x1024.DP.20k.py)|
 |D-SegNeXt-T| None | 20K | 61.14 | 5.30M | 6.82G |[config](myconfigs/dsegnext/tiny/Dsegnext.tiny.1024x1024.DP.20k.py)|
 |D-SegNeXt-T|  IN-1K | 20K | 73.32 | 5.30M | 6.82G |[config](myconfigs/dsegnext/tiny/Dsegnext.tiny.1024x1024.DP.20k.py)|
-| :-------: | :--------: | :---: | :--: | :----: | :----: | :----: |
+| --------- | ---------- | ----- | ---- | ------ | ------ | ------ |
 |Segformer-b1| IN-1K | 20K | 64.76 | 13.68M | 11.63G |[config](myconfigs/segformer/segformer.b1.1024x1024.DP.20k.py)|
 |SegNeXt-S| IN-1K | 20K | 65.65 | 13.89M | 15.32G |[config](myconfigs/segnext/small/segnext.small.1024x1024.DP.20k.py)|
 |D-SegNeXt-S| None | 20K | 62.69 | 17.32M | 17.76G | [config](myconfigs/dsegnext/small/dsegnext.small.1024x1024.DP.20k.py)|
 |D-SegNeXt-S| IN-1K | 20K | 67.39 | 17.32M | 17.76G | [config](myconfigs/dsegnext/small/dsegnext.small.1024x1024.DP.20k.py)|
-| :-------: | :--------: | :---: | :--: | :----: | :----: | :----: |
+| --------- | ---------- | ----- | ---- | ------ | ------ | ------ |
 |Segformer-b2| IN-1K | 20K | 66.78 | 24.72M | 17.93G |[config](myconfigs/segformer/segformer.b2.1024x1024.DP.40k.py)|
 | SegNeXt-B | IN-1K | 20K | 67.92 | 27.56M | 32.02G |[config](myconfigs/segnext/base/segnext.base.1024x1024.DP.40k.py)|
 |D-SegNeXt-B| IN-1K | 20K | 63.53 | 34.27M | 37.56G | [config](myconfigs/dsegnext/tiny/Dsegnext.tiny.1024x1024.OPM.20k.py)|
